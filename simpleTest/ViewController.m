@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSString *str1 = @"-1";
+    NSInteger iStr1 = [str1 integerValue];
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
