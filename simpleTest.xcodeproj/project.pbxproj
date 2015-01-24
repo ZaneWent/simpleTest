@@ -414,6 +414,7 @@
 				A17271A51A592835005A592B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A17271A61A592835005A592B /* Build configuration list for PBXNativeTarget "simpleTestTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +423,7 @@
 				A17271A81A592835005A592B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

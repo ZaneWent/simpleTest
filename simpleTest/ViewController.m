@@ -20,6 +20,15 @@
     NSString *str1 = @"-1";
     NSInteger iStr1 = [str1 integerValue];
     
+    int val = 10;
+    const char *fmt = "val = %d\n";
+    void (^blk)(void) = ^{printf(fmt,val);};
+    
+    val = 2;
+    fmt = "These values were changed. val = %d\n";
+    
+    blk();
+    
     
     
 }
