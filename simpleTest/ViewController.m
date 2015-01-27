@@ -29,6 +29,22 @@
     
     blk();
     
+    //via.http://objccn.io/issue-12-1/
+    //animationTest
+    UIImageView *testImage = [[UIImageView alloc]initWithFrame:CGRectMake(10, 100, 81.5, 65)];
+    testImage.image = [UIImage imageNamed:@"peo077_a"];
+    [self.view addSubview:testImage];
+    
+    CABasicAnimation *animation = [CABasicAnimation animation];
+    animation.keyPath = @"position.x";
+    animation.fromValue = @10;
+    animation.toValue = @210;
+    animation.duration = 1;
+    animation.repeatCount = 10;
+    
+    [testImage.layer addAnimation:animation forKey:@"basic"];
+    
+    
     
     
 }
