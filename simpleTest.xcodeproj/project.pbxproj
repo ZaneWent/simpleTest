@@ -16,6 +16,7 @@
 		A17271911A592834005A592B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A17271901A592834005A592B /* Images.xcassets */; };
 		A17271941A592834005A592B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A17271921A592834005A592B /* LaunchScreen.xib */; };
 		A17271A01A592835005A592B /* simpleTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A172719F1A592835005A592B /* simpleTestTests.m */; };
+		A48BE22B4FA250D2D31332AB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91088CD9D5F9B5B3EE2CC858 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		91088CD9D5F9B5B3EE2CC858 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A169DE591A775FB200639ED0 /* peo077_a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peo077_a.png; sourceTree = "<group>"; };
 		A169DE5A1A775FB200639ED0 /* peo077_b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peo077_b.png; sourceTree = "<group>"; };
 		A17271801A592833005A592B /* simpleTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simpleTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,8 @@
 		A17271991A592835005A592B /* simpleTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = simpleTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A172719E1A592835005A592B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A172719F1A592835005A592B /* simpleTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = simpleTestTests.m; sourceTree = "<group>"; };
+		C26CCCAC1ACC07DEC43AC083 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		EC75AE84219A6AC904C036C5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A48BE22B4FA250D2D31332AB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +75,8 @@
 				A17271821A592833005A592B /* simpleTest */,
 				A172719C1A592835005A592B /* simpleTestTests */,
 				A17271811A592833005A592B /* Products */,
+				FC2D9CE4344FC321D9D1CA26 /* Pods */,
+				B592C9B18072565EB1052A01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B592C9B18072565EB1052A01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91088CD9D5F9B5B3EE2CC858 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC2D9CE4344FC321D9D1CA26 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC75AE84219A6AC904C036C5 /* Pods.debug.xcconfig */,
+				C26CCCAC1ACC07DEC43AC083 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A17271A31A592835005A592B /* Build configuration list for PBXNativeTarget "simpleTest" */;
 			buildPhases = (
+				E33C8B1F91C0AD8A1AF7A1F5 /* Check Pods Manifest.lock */,
 				A172717C1A592833005A592B /* Sources */,
 				A172717D1A592833005A592B /* Frameworks */,
 				A172717E1A592833005A592B /* Resources */,
+				CE24FB206F206FDD178DB053 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,6 +247,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CE24FB206F206FDD178DB053 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E33C8B1F91C0AD8A1AF7A1F5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A172717C1A592833005A592B /* Sources */ = {
@@ -349,6 +408,7 @@
 		};
 		A17271A41A592835005A592B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC75AE84219A6AC904C036C5 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = simpleTest/Info.plist;
@@ -360,6 +420,7 @@
 		};
 		A17271A51A592835005A592B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C26CCCAC1ACC07DEC43AC083 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = simpleTest/Info.plist;
