@@ -17,6 +17,7 @@
 		A17271941A592834005A592B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A17271921A592834005A592B /* LaunchScreen.xib */; };
 		A17271A01A592835005A592B /* simpleTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A172719F1A592835005A592B /* simpleTestTests.m */; };
 		A48BE22B4FA250D2D31332AB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91088CD9D5F9B5B3EE2CC858 /* libPods.a */; };
+		BF7C79751DAA0FB900008265 /* ZWTimeSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7C79741DAA0FB900008265 /* ZWTimeSystem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		A17271991A592835005A592B /* simpleTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = simpleTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A172719E1A592835005A592B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A172719F1A592835005A592B /* simpleTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = simpleTestTests.m; sourceTree = "<group>"; };
+		BF7C79731DAA0FB900008265 /* ZWTimeSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWTimeSystem.h; sourceTree = "<group>"; };
+		BF7C79741DAA0FB900008265 /* ZWTimeSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWTimeSystem.m; sourceTree = "<group>"; };
 		C26CCCAC1ACC07DEC43AC083 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EC75AE84219A6AC904C036C5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +95,7 @@
 		A17271821A592833005A592B /* simpleTest */ = {
 			isa = PBXGroup;
 			children = (
+				BF7C79721DAA0FB900008265 /* ZWTime */,
 				A17271871A592833005A592B /* AppDelegate.h */,
 				A17271881A592833005A592B /* AppDelegate.m */,
 				A172718A1A592833005A592B /* ViewController.h */,
@@ -138,6 +142,15 @@
 				91088CD9D5F9B5B3EE2CC858 /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF7C79721DAA0FB900008265 /* ZWTime */ = {
+			isa = PBXGroup;
+			children = (
+				BF7C79731DAA0FB900008265 /* ZWTimeSystem.h */,
+				BF7C79741DAA0FB900008265 /* ZWTimeSystem.m */,
+			);
+			path = ZWTime;
 			sourceTree = "<group>";
 		};
 		FC2D9CE4344FC321D9D1CA26 /* Pods */ = {
@@ -288,6 +301,7 @@
 			files = (
 				A172718C1A592834005A592B /* ViewController.m in Sources */,
 				A17271891A592833005A592B /* AppDelegate.m in Sources */,
+				BF7C79751DAA0FB900008265 /* ZWTimeSystem.m in Sources */,
 				A17271861A592833005A592B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
